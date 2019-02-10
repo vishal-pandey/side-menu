@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vishal-Menu</title>
+</head>
+<body>
+
+	<div class="vishal-tab-container">
+		<div class="vishal-tab-header">
+			<span class="vishal-header-button">Tab1</span>
+			<span class="vishal-header-button">Tab2</span>
+		</div>
+
+		<div class="vishal-tab">
+			<ul class="vishal-menu">
+				<li>
+					One >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>
+								One 1 >
+							</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					Two >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>One 1</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>Three</li>
+				<li>
+					Four >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>One 1</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>Five</li>
+				<li>Six</li>
+				<li>Seven</li>
+				<li>Eight</li>
+				<li>Nine</li>
+				<li>Ten</li>		
+			</ul>
+		</div>
+		<div class="vishal-tab">
+			<ul class="vishal-menu">
+				<li>
+					Twooooooo >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>
+								One 1 >
+							</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					Two >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>One 1</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>Three</li>
+				<li>
+					Four >
+					<div class="vishal-menu-content">
+						<ul class="vishal-menu">
+							<li>One 1</li>
+							<li>One 2</li>
+							<li>One 3</li>
+							<li>One 4</li>
+						</ul>
+					</div>
+				</li>
+				<li>Five</li>
+				<li>Six</li>
+				<li>Seven</li>
+				<li>Eight</li>
+				<li>Nine</li>
+				<li>Ten</li>		
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<style type="text/css">
+	body{
+		/*background-color: lightgrey;*/
+		padding: 0;
+		margin: 0;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.vishal-menu{
+		list-style-type: none;
+		/*border: 1px solid red;*/
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+	}
+	.vishal-menu li{
+		width: 100%;
+		height: 30px;
+		border: 1px solid black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-bottom: none;
+		position: relative;
+		/*margin: 5px 0px; */
+	}
+	.vishal-menu li:last-child{
+		border-bottom: 1px solid black;
+	}
+	.vishal-menu li:hover{
+		background-color: green;
+		cursor: pointer;
+	}
+	.vishal-menu li:hover > .vishal-menu-content{
+		display: initial;
+	}
+	.vishal-menu-content{
+		display: none;
+		position: absolute;
+		width: 150px;
+		left: 100%;
+		top: 0;
+		/*width: 500px;*/
+		/*height: 300px;*/
+	}
+
+	.vishal-tab{
+		width: 100%;
+		display: none;
+	}
+	.vishal-tab-container{
+		width: 150px;
+	}
+	.vishal-tab-header{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.vishal-tab-container .vishal-tab:nth-child(2){
+		display: initial;
+	}
+
+	.vishal-header-button{
+		display: inline-block;
+		width: 50%;
+		border: 1px solid black;
+		border-bottom: none;
+		border-right: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+	}
+	.vishal-header-button:last-child{
+		border-right: 1px solid black;
+	}
+
+
+</style>
